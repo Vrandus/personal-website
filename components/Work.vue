@@ -1,12 +1,29 @@
 <template>
-     <div>
-      <div class="columns is-desktop">
-        <div class="center column is-half-desktop">
-          <h1>{{employer}}</h1>
-          <slot/>
+     <div class="card">
+      <div v-if="employer.isFlipped">
+        <div class="columns is-desktop">
+          <div class="center column is-half-desktop">
+            <h1>{{employer.employer}}</h1>
+            <h2 class="work-title">{{employer.title}}</h2>
+            <h2 class="work-title">{{employer.dates}}</h2>
+            <p class="work-content">{{employer.content}}</p>
+          </div>
+          <div class="column is-half-desktop">
+            <img class="amd-logo" :src="employer.logo">
+          </div>
         </div>
-        <div class="column is-half-desktop">
-          <img class="amd-logo" src="logo">
+      </div>
+      <div v-else>
+        <div class="columns is-desktop">
+          <div class="column is-half-desktop">
+            <img class="amd-logo" :src="employer.logo">
+          </div>
+          <div class="center column is-half-desktop">
+            <h1>{{employer.employer}}</h1>
+            <h2 class="work-title">{{employer.title}}</h2>
+            <h2 class="work-title">{{employer.dates}}</h2>
+            <p class="work-content">{{employer.content}}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -16,26 +33,16 @@
 export default {
   props: {
     employer: {
-      type: String,
+      type: Object,
       required: true,
     },
-    logo: {
-      type: String,
-      required: true,
-    },
-    content: {
-      type: String,
-      required: true,
-    }
+
   },
 }
 </script>
 
 
 <style>
-  .title {
-    font-size: 1rem;
-  }
     .amd-logo {
     height: 100%;
     width: 100%;
@@ -43,5 +50,14 @@ export default {
     position: relative;
     padding: 6rem 6rem 6rem 6rem;
     
+  }
+  .work-title {
+    font-size: 1.3rem;
+    opacity: 80%;
+  }
+  .work-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
   }
 </style>

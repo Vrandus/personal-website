@@ -3,14 +3,14 @@
     <b-navbar fixed-top>
         <template slot="brand">
             <b-navbar-item class="name" tag="router-link" :to="{ path: '/' }">
-              <div class="myName">Prateek Tailor</div>
+              <div class="myName">Prateek <span class="col">Tailor</span></div>
             </b-navbar-item>
         </template>
         <template slot="start">
             <b-navbar-item href="#about">
                 About Me
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#work-experience">
                 Work Experience
             </b-navbar-item>
             <b-navbar-item href="#">
@@ -72,11 +72,11 @@ export default {
 </script>
 <style>
   .col {
-    color: #00796B;
+    color: #7957d5;
   }
   .myName {
     font-Size: 1.5rem;
-    color: #00796B;
+    font-weight: 500;
   }
   .name{
     margin-left: 5rem;

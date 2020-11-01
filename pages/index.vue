@@ -3,26 +3,27 @@
     <About title="About Me" id="about">
       Raised in the suburbs of Toronto, I'm a 4th year York University student 
       currently studying Computer Science. 
+      Mauris diam sem, dignissim id fermentum eu, laoreet eu tellus. Cras quis augue eu metus luctus fermentum in a tortor. 
     </About>
-    <h1 class="work">
+    <h1 class="work" id="work-experience">
       Work Experience
     </h1>
-    <Work v-for="experience in experiences"
-    v-bind="experience.employer"
-    >
-      {{experience.content}}
-    </Work>
+    <Work
+    v-for="experience in experiences"
+    :key="experience.employer"
+    :employer="experience"
+    />
     <div class="columns is-desktop">
 
-      <card title="Free" icon="linkedin">
+      <card title="Free" icon="discord">
         Open source on <a href="https://github.com/buefy/buefy"> GitHub </a>
       </card>
 
-      <card title="Responsive" icon="cellphone-link">
+      <card title="Responsive" icon="layers">
         <b class="has-text-grey"> Every </b> component is responsive
       </card>
 
-      <card title="Modern" icon="alert-decagram">
+      <card title="Modern" icon="folder-outline">
         Built with <a href="https://vuejs.org/"> Vue.js </a> and
         <a href="http://bulma.io/"> Bulma </a>
       </card>
@@ -51,21 +52,27 @@ export default {
       experiences : [
         {
           employer : "AMD",
-          logo : "../assets/amd-red.png",
-          content: "",
-          isLeft: false
+          title: "Software QA Engineer Intern",
+          logo : "/amd-red.png",
+          dates : "October 2020 - Present",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet tellus ante, sit amet sodales massa ultricies quis. Curabitur bibendum aliquam erat, vel egestas elit dictum id. Mauris diam sem, dignissim id fermentum eu, laoreet eu tellus. Cras quis augue eu metus luctus fermentum in a tortor. Sed quis nibh quis tortor congue molestie. Donec ullamcorper enim massa, eu vehicula libero scelerisque vitae. Vestibulum mattis posuere magna et pulvinar. Curabitur dolor mauris, hendrerit sed dui eget, efficitur malesuada tortor. Phasellus congue maximus consectetur.",
+          isFlipped: true
         },
         {
           employer : "Jupio Labs",
-          logo : "",
-          content : "",
-          isLeft: true
+          title: "Software Engineer Intern",
+          logo : "/jupio.png",
+          dates : "September 2018 - January 2019",
+          content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet tellus ante, sit amet sodales massa ultricies quis. Curabitur bibendum aliquam erat, vel egestas elit dictum id. Mauris diam sem, dignissim id fermentum eu, laoreet eu tellus. Cras quis augue eu metus luctus fermentum in a tortor. Sed quis nibh quis tortor congue molestie. Donec ullamcorper enim massa, eu vehicula libero scelerisque vitae. Vestibulum mattis posuere magna et pulvinar. Curabitur dolor mauris, hendrerit sed dui eget, efficitur malesuada tortor. Phasellus congue maximus consectetur.",
+          isFlipped: false
         },
         {
           employer : "York University",
-          logo : "",
-          content : "",
-          isLeft: false
+          title: "Computing Support Assistant",
+          logo : "/york.jpg",
+          dates : "October 2017 - Present",
+          content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet tellus ante, sit amet sodales massa ultricies quis. Curabitur bibendum aliquam erat, vel egestas elit dictum id. Mauris diam sem, dignissim id fermentum eu, laoreet eu tellus. Cras quis augue eu metus luctus fermentum in a tortor. Sed quis nibh quis tortor congue molestie. Donec ullamcorper enim massa, eu vehicula libero scelerisque vitae. Vestibulum mattis posuere magna et pulvinar. Curabitur dolor mauris, hendrerit sed dui eget, efficitur malesuada tortor. Phasellus congue maximus consectetur.",
+          isFlipped: true
         }
       ]
     }
@@ -74,8 +81,11 @@ export default {
 </script>
 
 <style>
+  #about {
+    font-size: 1.2rem;
+  }
   .work {
-    margin: auto;
+    margin: 1rem auto;
     text-align: center;
   }
 </style>
