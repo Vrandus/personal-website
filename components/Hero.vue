@@ -31,19 +31,23 @@ export default {
 <style>
      .hero{
           height: 50%;
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero-old.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
-
      }
      .title {
           margin-left: 4rem;
           font-size: 4rem;
+          filter: none;
+          opacity: 80%;
      }
      .subtitle{
           margin-left: 6rem;
-          opacity: 60%;
+          opacity: 70%;
+     }
+     .hero-body {
+          filter: none;
      }
 </style>
