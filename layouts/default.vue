@@ -13,10 +13,10 @@
             <b-navbar-item href="#work-experience">
                 Work Experience
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#projects">
                 Projects
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#hobbies">
                 Hobbies
             </b-navbar-item>
         </template>

@@ -2,7 +2,7 @@
   <div class="column">
     <div class="card">
       <header class="card-header">
-        <p class="card-header-title has-text-grey">
+        <p class="c-title card-header-title has-text-grey">
           {{ title }}
         </p>
       </header>
@@ -36,3 +36,9 @@ export default {
   },
 }
 </script>
+<style>
+  .c-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+</style>

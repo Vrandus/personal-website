@@ -5,7 +5,7 @@
       currently studying Computer Science. 
       Mauris diam sem, dignissim id fermentum eu, laoreet eu tellus. Cras quis augue eu metus luctus fermentum in a tortor. 
     </About>
-    <h1 class="work" id="work-experience">
+    <h1 class="project" id="work-experience">
       Work Experience
     </h1>
     <Work
@@ -13,25 +13,23 @@
     :key="experience.employer"
     :employer="experience"
     />
-    <div class="columns is-desktop">
-
-      <card title="Free" icon="discord">
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub </a>
+    <h1 class="project">Projects</h1>
+    <div class="columns is-desktop" id="projects">
+      <card title="ChatCraft" icon="discord" href="https://github.com/buefy/buefy">
+        Open source on <a > GitHub </a>
       </card>
 
-      <card title="Responsive" icon="layers">
+      <card title="Number Recognizing MLP" icon="layers">
         <b class="has-text-grey"> Every </b> component is responsive
       </card>
 
-      <card title="Modern" icon="folder-outline">
+      <card title="DCIM Importer" icon="folder-outline">
         Built with <a href="https://vuejs.org/"> Vue.js </a> and
         <a href="http://bulma.io/"> Bulma </a>
       </card>
-
-      <card title="Lightweight" icon="arrange-bring-to-front">
-        No other internal dependency
-      </card>
     </div>
+    <h1 class="project" id="hobbies">Hobbies</h1>
+
   </section>
 </template>
 
@@ -86,6 +84,11 @@ export default {
   }
   .work {
     margin: 1rem auto;
+    text-align: center;
+  }
+  .project{
+    margin: 2rem auto;
+    margin-top: 3rem;
     text-align: center;
   }
 </style>
