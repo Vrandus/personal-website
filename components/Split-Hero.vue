@@ -75,6 +75,7 @@ export default {
      }
      .subtitles{
           text-align: center;
+          padding: 0 1rem;
           opacity: 70%;
      }
      .hero-body {

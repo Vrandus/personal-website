@@ -16,16 +16,18 @@
     <h1 class="project">Projects</h1>
     <div class="columns is-desktop" id="projects">
       <card title="ChatCraft" icon="discord" link="https://github.com/Vrandus/Chatcraft">
-        Open source on <a > GitHub </a>
+        My friends and I wanted to play some minecraft, but it was hard to keep track of what went on in game and seeing who was online. So I created a discord bot that can be integrated into a Discord text channel that would relay the ingame chat to the channel vice versa.
       </card>
 
       <card title="Number Recognizing MLP" icon="layers" link="https://github.com/Vrandus/Number-Recognition-MLP">
-        <b class="has-text-grey"> Every </b> component is responsive
+        A multilayer perceptron trained on a subset of the MNIST data set. I created it with the help of old notes. 
+        It currently runs at an accuracy rate of 97.7% using a certain number of hidden nodes. Created with Golang, there is also functionality to 
+        run the neural network on a 28x28 png.
       </card>
 
       <card title="DCIM Importer" icon="folder-outline" link="https://github.com/Vrandus/DCIM-Importer">
         The worst part of photography is having to import and organize your images. I had a back-log of 10k+ images on a number of SD cards, 
-        so I made a command-line program to efficiently copy files into an organized file structure.
+        so I made a command-line program to efficiently copy files into an organized file structure. I also learned Golang along the way.
 
 
       </card>

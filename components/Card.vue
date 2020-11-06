@@ -2,7 +2,7 @@
   
   <div class="column">
     <a :href="link" target="_blank">
-    <div class="card">
+    <div class="card box">
       <header class="card-header">
         <p class="c-title card-header-title has-text-grey has-text-centered">
           {{ title }}
@@ -48,4 +48,14 @@ export default {
     margin: 0 auto;
     text-align: center;
   }
+  .card-footer-item {
+    margin: 1rem 2rem;
+  }
+.box {
+  transition: box-shadow .3s;
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 </style>

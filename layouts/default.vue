@@ -37,8 +37,8 @@
         <nuxt />
       </div>
             <SplitHero      
-              title="Photography" subtitle="Software Engineer, Photographer"
-              titles="Gunpla"  subtitles="test"/>
+              title="Photography" subtitle="I love photography, from portraits to landscapes. I've been taking photos for a couple years now and have had some paid gigs. All the photos on this website were taken by me, visit my Instagram linked below for more! "
+              titles="Gunpla"  subtitles="Not a typo! Gunpla stands for Gundam + Plastic model. As a kid, I was always into giant mechs like transformers and that obsession eventually led to learning about Gundams. I've been building gunpla kits since."/>
     </section>
     <footer class="footer">
       <div class="content has-text-centered">
