@@ -30,7 +30,7 @@ export default {
 
 <style>
      .hero{
-          height: 50%;
+          height: 60%;
           background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero-old.jpg");
           background-position: center;
           background-repeat: no-repeat;

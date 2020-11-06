@@ -32,21 +32,41 @@
             </b-navbar-item>
         </template>
     </b-navbar>
-      <Hero title="Prateek Tailor" subtitle="Software Developer, Photographer"/>
+      <Hero title="Prateek Tailor" subtitle="Software Engineer, Photographer"/>
       <div class="container column is-10">
         <nuxt />
       </div>
+            <SplitHero      
+              title="Photography" subtitle="Software Engineer, Photographer"
+              titles="Gunpla"  subtitles="test"/>
     </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Created using <a href="https://vuejs.org/">Vue</a>, <a href="https://nuxtjs.org/">Nuxt</a>, and <a href="https://buefy.org/">Buefy</a>.
+        </p>
+        <p>
+          <strong>Find Me On</strong>
+          <div>
+            <a href="https://www.linkedin.com/in/prtailor/" target="_blank"><b-icon :icon="linkedin" size="is-large" type="is-primary"/></a>
+            <a href="https://github.com/vrandus" target="_blank"><b-icon :icon="github" size="is-large" type="is-primary"/></a>
+            <a href="https://www.instagram.com/prateektailor/" target="_blank"><b-icon :icon="instagram" size="is-large" type="is-primary"/></a>
+          </div>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
 import About from '~/components/About' 
 import Hero from '~/components/Hero'
+import SplitHero from '~/components/Split-Hero'
 export default {
     components: {
     Hero,
-    About
+    About,
+    SplitHero
   },
   data() {
     return {
