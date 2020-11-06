@@ -70,13 +70,12 @@ export default {
      .titles {
           text-align: center;
           font-size: 4rem;
-          filter: none;
-          opacity: 80%;
+          opacity: 0.8;
      }
      .subtitles{
           text-align: center;
           padding: 0 1rem;
-          opacity: 70%;
+          opacity: 0.7;
      }
      .hero-body {
           filter: none;

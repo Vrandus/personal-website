@@ -40,12 +40,11 @@ export default {
      .title {
           margin-left: 4rem;
           font-size: 4rem;
-          filter: none;
-          opacity: 80%;
+          opacity: 0.8;
      }
      .subtitle{
           margin-left: 6rem;
-          opacity: 70%;
+          opacity: 0.7;
      }
      .hero-body {
           filter: none;
