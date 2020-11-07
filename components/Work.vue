@@ -53,7 +53,7 @@ export default {
   }
   .work-title {
     font-size: 1.3rem;
-    opacity: 80%;
+    opacity: 0.8;
   }
   .work-content {
     padding-left: 4rem;
