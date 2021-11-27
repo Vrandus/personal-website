@@ -19,6 +19,9 @@
             <b-navbar-item href="#hobbies">
                 Hobbies
             </b-navbar-item>
+            <b-navbar-item href="/11-26-2021-resume.pdf">
+                Resume
+            </b-navbar-item>
         </template>
         <template slot="end">
             <b-navbar-item href="https://www.linkedin.com/in/prtailor/" target="_blank" class="col">
@@ -38,13 +41,10 @@
       </div>
             <SplitHero      
               title="Photography" subtitle="I love photography, from portraits to landscapes. I've been taking photos for a couple years now and have had some paid gigs. All the photos on this website were taken by me, visit my Instagram linked below for more! "
-              titles="Gunpla"  subtitles="Not a typo! Gunpla stands for Gundam + Plastic model. As a kid, I was always into giant mechs like transformers and that obsession eventually led to learning about Gundams. I've been building gunpla kits since."/>
+              titles="Gunpla"  subtitles="Not a typo! Gunpla stands for Gundam + Plastic model. As a kid, I was always into giant mechs like Transformers and that obsession eventually led to learning about Gundams. I've been building Gunpla kits since."/>
     </section>
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>
-          Created using <a href="https://vuejs.org/">Vue</a>, <a href="https://nuxtjs.org/">Nuxt</a>, and <a href="https://buefy.org/">Buefy</a>.
-        </p>
         <p>
           <strong>Find Me On</strong>
           <div>
